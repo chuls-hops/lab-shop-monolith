@@ -42,7 +42,9 @@ public class Inventory  {
 
 
     public void decreaseStock(DecreaseStockCommand decreaseStockCommand){
+        setStock(getStock() - decreaseStockCommand.getQty().longValue());  // Copy & Paste this code
     }
+
 
 
 
